@@ -9,7 +9,7 @@ QIIME1.8.0で出力されたデータをlefse用に加工する
 用いたデータは[Mishima, et al., *American Journal of Physiology-Renal Physiology*, 2017.](https://www.ncbi.nlm.nih.gov/pubmed/29167170)からマウス回盲部の腸内細菌叢データ（属レベル）のRF+vehicleとRF+Cana群（論文ではもう1群あるが3群では有意差出なかったので）。
 菌種名の「;」を「|」に変更。サンプル名は削除しグループ分けをclass行として記載。
 ※LEfSeの仕様か[]はアンダーバーと認識される。例えば「g__[Prevotella]」はlefseでプロットされると「g___Prevotella_」と表示されてしまう。
-![](/image/入力ファイル.png)
+![](https://github.com/t-tsukimi/manual/blob/master/LEfSe/image/%E5%85%A5%E5%8A%9B%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB.png)
 
 
 
