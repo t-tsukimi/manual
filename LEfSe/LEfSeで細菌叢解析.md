@@ -58,6 +58,7 @@ LDA Scoreの算出方法の詳細は[原著論文](https://www.ncbi.nlm.nih.gov/
 成功するとブラウザ上で確認できるほか、pngファイルをダウンロードすることも可能です。  
 
 ノードの大きさはその菌種の存在量、色が濃いほどグループ間の差が大きいことを示します。  
-個人的にはこの図がLEfSeを使用する最も大きなメリットかと思います。webツールで存在量とグループを考慮したCladegramを書けるのは便利です。
+個人的にはこの図がLEfSeを使用する最も大きなメリットかと思います。  
+webツールで存在量とグループを考慮したCladegramを書けるのは便利です。
 ![](https://github.com/t-tsukimi/manual/blob/master/LEfSe/image/D2.png)
 ![](https://github.com/t-tsukimi/manual/blob/master/LEfSe/image/D3.png)
