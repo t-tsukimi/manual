@@ -40,6 +40,7 @@ QIIME1.8.0で出力されたデータをlefse用に加工する
 菌種名が入りきらないときは、Set text and label options (font size, abbreviations, ...)をAdvancedにし、Label font sizeを小さくすればいい(デフォルトは7)
 LDA Scoreの算出方法の詳細は原著論文(https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3218848/)をご参照ください。
 概要としてはKruskal-Wallis検定およびWolcoxonの順位和検定を全てに変数（この場合は細菌種）に実施し、有意となった変数を用いて 線形判別分析 (Linear Discriminant Analysis)を行います。 通常の統計検定に加えてグループ間の差異も考慮できることが強みです。ですので、著者たちはbiomarkerの探索に有効ですと主張しています。
+線形判別分析については明治大学データ化学工学研究室(金子研究室)の資料が[参考](https://datachemeng.com/lineardiscriminantanalysis/)になります。
 ![](/image/C2.png)
 ![](/image/C3.png)
 
