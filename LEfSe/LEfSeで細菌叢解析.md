@@ -1,7 +1,7 @@
 ## LEfseで細菌叢解析（Galaxyを利用）
 
 Author:Tomoya Tsukimi  
-Last update:2019-01-14  
+Last update:2019-04-23  
 
 
 ### 0. インプット用データの準備
@@ -12,11 +12,26 @@ QIIME1.8.0で出力された組成データをLEfSe用に加工します。
 ※論文ではもう1群ありますが、以降の解析で有意差が出ずにプロットできなかったため、Normal群を削除しています。  
 なお、[公式](https://bitbucket.org/biobakery/biobakery/wiki/lefse)で配布されている[デモ用txtファイル](https://bitbucket.org/biobakery/biobakery/raw/tip/demos/biobakery_demos/data/lefse/input/hmp_small_aerobiosis.txt)はなぜか途中でエラーになります。。。
 
-菌種名の「;」を「|」に変更し、サンプル名を削除してグループ分けをclass行として記載します。  
+#### 0.a QIIMEのコマンドでLEfSe用データを出力する場合
+```sh
+#QIIMEが立ち上がった状態で
+summarize_taxa.py \
+-i otu_table.biom \ # -i:biomファイル
+-o summarize_taxa_L6 \ # -o:出力ファイル名
+-m mapping_file.txt \ # -m:マッピングファイル
+--delimiter '|' # 区切り記号
+```
+詳細は[こちら](https://twbattaglia.gitbooks.io/introduction-to-qiime/content/lefse.html)のページを参照してください。  
+このQIIMEコマンドで出力すると各菌のレベルの合計値も算出されます。
+![](https://github.com/t-tsukimi/manual/blob/master/LEfSe/image/input_qiime_command.png)
+
+#### 0.b その他の組成データを使用する場合
+菌レベルの区切りを「|」に変更し(例えばgreen genesでは菌のレベルは「;」で区切られているので、「|」に置換します)、サンプル名を削除してグループ分けをclass行として記載します。  
 ※LEfSeの仕様か[]はアンダーバーと認識されます。例えば「g__[Prevotella]」は「g___Prevotella_」と表示されます。
 ![](https://github.com/t-tsukimi/manual/blob/master/LEfSe/image/%E5%85%A5%E5%8A%9B%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB.png)
 
 
+#### abどちらの場合でも動作しますが、LefSeのデモファイルから察するにLEfSe自体は0.a形式を前提にしているように思います。
 
 ### 1. input用データのアップロード  
 [Galaxy](http://huttenhower.sph.harvard.edu/galaxy/)にアクセスし、LEfSeを検索します。  
