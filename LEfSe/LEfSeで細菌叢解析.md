@@ -50,7 +50,7 @@ summarize_taxa.py \
 ---
 「A) Format Data for LEfSe」をクリックし、メタデータが記載されている向き、グループとして使用するデータ、サンプルごとにノーマライゼーションするかを選択してExcecuteをクリック。
 ![](https://github.com/t-tsukimi/manual/blob/master/LEfSe/image/A.png)
-![](https://github.com/t-tsukimi/manual/blob/master/LEfSe/image/A2.png)  
+![](https://github.com/t-tsukimi/manual/blob/master/LEfSe/image/A2-2.png)  
 <br>
 
 ### 3. LDA Effect Sizeを求める
