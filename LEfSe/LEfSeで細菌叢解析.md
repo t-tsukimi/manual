@@ -71,8 +71,10 @@ LDA Scoreの算出方法の詳細は[原著論文](https://www.ncbi.nlm.nih.gov/
 「C) Plot LEfSe Results」をクリックし、先ほどBで実行されたファイルを選択してExecuteをクリック。  
 成功するとブラウザ上で確認できるほか、pngファイルをダウンロードすることも可能です。  
 ※菌種名が入りきらないときは、「Set text and label options (font size, abbreviations, ...)」をAdvancedにし、Label font sizeを小さくする(デフォルトは7）。
+結果の値はしたいときは①Ｂの編集ボタン（鉛筆マーク）をクリック、②Datatypeタブを選択、③excelやcsvなど開けられるファイル形式を選択、④ダウンロードアイコンをクリックする、とダウンロードすることができる。
 ![](https://github.com/t-tsukimi/manual/blob/master/LEfSe/image/C2.png)
 ![](https://github.com/t-tsukimi/manual/blob/master/LEfSe/image/C3.png)  
+![](https://github.com/t-tsukimi/manual/blob/master/LEfSe/image/result_download.png)  
 <br>
 
 
